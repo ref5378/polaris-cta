@@ -12,28 +12,32 @@ export class PolarisChip extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: inline-block;
+        display: inline-flex;
         margin: 0 12px 12px 0;
       }
 
       .link:focus,
       .link:hover,
       :host([active]) .link{
-        background-color: #e4e5e7;
-        border: 2px solid #e4e5e6;
-        border-radius: 2px;
-        color: #005fa9;
+        border: 2px radius #005fa9;
+        background-color: #005fa9;
+        color:  #fff;
+        padding: 12px 16px 12px 16px;
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       .link {
-        font-weight: bold;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 700;
+        padding: 12px 16px 12px 16px;
+        letter-spacing: .025rem;
+        color: #005fa9;
         text-decoration: none;
-        padding: 8px 4px;
-        border: 2px solid #444;
-        color: #444;
-        font-size: 16px;
+        display: inline-block;
+        margin-top: 20px;
+        border: 2px solid #005fa9;
       }
     `;
   }
