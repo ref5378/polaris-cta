@@ -15,8 +15,9 @@ export class PolarisChip extends LitElement{
       :host {
         display: inline-block;
         margin: 16px 12px 16px 12px;
-        text-transform: uppercase;
+        text-transform: none;
         font-style: italic;
+        text-transform: uppercase;
         padding: 16px 12px 16px 12px;
         font-weight: bold;
       }
@@ -26,7 +27,7 @@ export class PolarisChip extends LitElement{
         background-color: #fff;
         color: #005fa9;
         padding: 16px 12px 16px 12px;
-        border-radius: 4px;
+        text-transform: uppercase;
         text-decoration: none;
       }
 
@@ -34,11 +35,10 @@ export class PolarisChip extends LitElement{
       :host([active]) .primaryOutlined {
         background-color: #005fa9;
         border: 2px solid #005fa9;
-        border-radius: 2px;
         color: #fff;
         cursor: pointer;
+        text-transform: uppercase;
         text-decoration: none;
-        border-radius: 4px;
       }
 
       .primaryFilled {
@@ -47,7 +47,7 @@ export class PolarisChip extends LitElement{
         padding: 16px 12px 16px 12px;
         color: #fff;
         border: 2px solid #005fa9;
-        border-radius: 4px;
+        text-transform: uppercase;
         text-decoration: none;
       }
 
@@ -55,11 +55,9 @@ export class PolarisChip extends LitElement{
       :host([active]) .primaryFilled {
         background-color: #fff;
         border: 2px solid #005fa9;
-        border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
-        text-decoration: underline;
-        border-radius: 4px;
+        text-transform: uppercase;
         text-decoration: none;
       }
 
@@ -70,7 +68,7 @@ export class PolarisChip extends LitElement{
         color: #ccf0ff;
         border: 2px solid #fff;
         opacity: 0.7;
-        border-radius: 4px;
+        text-transform: uppercase;
         text-decoration: none;
       }
 
@@ -78,19 +76,18 @@ export class PolarisChip extends LitElement{
       :host([active]) .tinted {
         background-color: #fff;
         border: 2px solid #005fa9;
-        border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
+        text-transform: uppercase;
         text-decoration: none;
-        border-radius: 4px;
       }
 
       .lightOutlined {
         border: 2px solid #fff;
         color: #ccf0ff;
         padding: 16px 12px 16px 12px;
-        border-radius: 4px;
         text-decoration: none;
+        text-transform: uppercase;
         background-color: transparent;
       }
 
@@ -98,11 +95,9 @@ export class PolarisChip extends LitElement{
       :host([active]) .lightOutlined {
         background-color: #ccf0ff;
         border: 2px solid #ccf0ff;
-        border-radius: 2px;
         color: #005fa9;
         cursor: pointer;
-        text-decoration: underline;
-        border-radius: 4px;
+        text-transform: uppercase;
         text-decoration: none;
       }
 
@@ -110,8 +105,8 @@ export class PolarisChip extends LitElement{
         border: 2px solid #ccf0ff;
         color: #1e407c;
         padding: 16px 12px 16px 12px;
-        border-radius: 4px;
         text-decoration: none;
+        text-transform: uppercase;
         background-color: #ccf0ff;
       }
 
@@ -119,11 +114,9 @@ export class PolarisChip extends LitElement{
       :host([active]) .lightFilled {
         background-color: transparent;
         border: 2px solid #ccf0ff;
-        border-radius: 2px;
         color: #ccf0ff;
         cursor: pointer;
-        text-decoration: underline;
-        border-radius: 4px;
+        text-transform: uppercase;
         text-decoration: none;
       }
     `;
